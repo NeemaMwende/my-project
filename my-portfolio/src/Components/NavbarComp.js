@@ -41,15 +41,17 @@ export default class NavbarComp extends Component {
                 {/* <Route path="/home" exact component={HomePage}/>
                 <Route path="/about" component={AboutPage}/>
                 <Route path="/contact" component={ContactPage}/> */}
-                <Route path='/about'>
-                    <About />
-                <Route/>
-                <Route path='/contacts'>
-                    <Contacts />
-                <Route/>
-                <Route path='/'>
-                    <Home />
-                <Route/>
+                <Switch>
+                    <Route path='/about'>
+                        <About />
+                    <Route/>
+                    <Route path='/contacts'>
+                        <Contacts />
+                    <Route/>
+                    <Route path='/'>
+                        <Home />
+                    <Route/>
+                </Switch>
         </div>
     </Router>
     );
